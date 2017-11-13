@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MyPomodoro</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<div class="app">
+  <div id="timer" class="timer">00:00</div>
+  <div class="buttons">
+    <button id="startWork" class="btn startWork" data-time="1500">Start work <i class="fa fa-bolt" aria-hidden="true"></i></button>
+    <button id="startBreak" class="btn startBreak" data-time="300">Start break <i class="fa fa-coffee" aria-hidden="true"></i></button>
+    <button id="resetTimers" class="btn resetTimers">Reset <i class="fa fa-stop-circle" aria-hidden="true"></i></button>
+  </div>
+  <div class="toggles">
+    <input type="checkbox" id="notifications" class="switch-button green">
+    <label for="notifications" class="checkbox-label" data-off="off" data-on="notifications"></label>
+
+    <input type="checkbox" id="sounds" class="switch-button green">
+    <label for="sounds" class="checkbox-label" data-off="off" data-on="sounds"></label>
+  </div>
+</div>
+
+<body>
+  <script src="node_modules/push.js/bin/push.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

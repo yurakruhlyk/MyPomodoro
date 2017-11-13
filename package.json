@@ -1,0 +1,12 @@
+{
+  "name": "MyPomodoro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "browser-sync start  --server --files \"*.css, *.html, *.js\""
+  },
+  "dependencies": {
+    "push.js": "^1.0.5"
+  }
+}
